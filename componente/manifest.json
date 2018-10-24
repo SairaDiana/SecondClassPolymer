@@ -1,0 +1,6 @@
+{
+  "name": "my-component",
+  "short_name": "my-component",
+  "start_url": "/",
+  "display": "standalone"
+}

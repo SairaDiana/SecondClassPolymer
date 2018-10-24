@@ -1,0 +1,35 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="my-component-app">
+  <template>
+    <style></style>
+    <input type="text" value="{{active::input}}">
+
+    </template>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymerthid      */
+    class MyComponentApp extends Polymer.Element {
+      static get is() { return 'my-component-app'; }
+      static get properties() {
+        return {
+          active: {
+            type: String,
+            notify: true,
+            reflectToAttribute: true
+          }
+        };
+      }
+      _activeChanged(){
+
+
+      }
+
+    }
+
+    window.customElements.define(MyComponentApp.is, MyComponentApp);
+  </script>
+</dom-module>
